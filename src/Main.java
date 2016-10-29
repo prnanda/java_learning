@@ -1,9 +1,21 @@
-import java.awt.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
+import java.util.Queue;
+import java.util.Set;
+import java.util.SortedSet;
+import java.util.TreeSet;
 import java.util.concurrent.ArrayBlockingQueue;
 
 import ocean.Fish;
@@ -465,20 +477,20 @@ public class Main {
             System.out.println(animal1);
         }
 
-        // Implementing the iterable interface
 
-        UrlLibrary urlLibrary = new UrlLibrary();
+        // Converting char to int
+        System.out.println("\n");
+        String inputVal = "1238";
 
-        for(String url: urlLibrary){
-            System.out.println(url);
+        for(int i=0;i<inputVal.length();i++){
+            System.out.println(inputVal.charAt(i));
+            //int num = inputVal.charAt(i);
+            int num = Character.getNumericValue(inputVal.charAt(i));
+            num++;
+            System.out.println(num);
         }
 
         // Lambda Expressions
-
-
-
-
-
 
     }
 
